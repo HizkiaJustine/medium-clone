@@ -15,7 +15,7 @@ class PostController extends Controller
     {
         $posts = Post::orderBy('created_at', 'DESC')->paginate(10); 
 
-        return view('dashboard', [
+        return view('post.index', [
             'posts' => $posts,
         ]);
     }
@@ -25,7 +25,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        return view('post.create');
     }
 
     /**
