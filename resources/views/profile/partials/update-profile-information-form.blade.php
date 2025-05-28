@@ -20,7 +20,7 @@
 
         @if ($user->image)
             <div>
-                <img src="{{ Storage::url($user->image) }}" class="rounded-full h-20 w-20" alt="{{ $user->name }}">
+                <img src="{{ $user->imageurl() }}" class="rounded-full h-20 w-20" alt="{{ $user->name }}">
             </div>
         @endif
         <!-- Image -->
