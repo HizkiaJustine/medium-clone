@@ -25,10 +25,9 @@
                         </div>
                     </div>
                 </div>
+
                 {{-- Clap Section --}}
-                <div class="mt-8 border-t border-b">
-                    some content
-                </div>
+                <x-clap-button></x-clap-button>
 
                 {{-- Content Section --}}
                 <div class="mt-8">
@@ -37,6 +36,14 @@
                         <p>{{ $post->content }}
                     </div>
                 </div>
+
+                {{-- Category Section --}}
+                <div class="mt-8">
+                    <span class="px-4 py-2 bg-gray-300 rounded-2xl">{{ $post->category->name }}</span>
+                </div>
+
+                {{-- Clap Section --}}
+                <x-clap-button></x-clap-button>
             </div>
         </div>
     </div>
